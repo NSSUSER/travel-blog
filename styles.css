@@ -1,0 +1,165 @@
+/* Reset default styles for consistency across browsers */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set default font and background for the body */
+body {
+    font-family: 'Helvetica', Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #fff;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #222;
+    color: #ddd;
+}
+
+/* Style the header */
+header {
+    background-color: #1a3c34;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Style the navigation */
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #f1c40f;
+}
+
+/* Style the dark mode toggle button */
+header button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #f1c40f;
+    color: #1a3c34;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+header button:hover {
+    background-color: #e67e22;
+}
+
+/* Style the main content */
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Style sections */
+section {
+    margin-bottom: 2rem;
+}
+
+section h2 {
+    font-size: 2rem;
+    color: #1a3c34;
+    margin-bottom: 1rem;
+}
+
+body.dark-mode section h2 {
+    color: #f1c40f;
+}
+
+/* Style the home section */
+#home {
+    text-align: center;
+}
+
+#home p {
+    font-size: 1.1rem;
+}
+
+/* Style blog posts */
+.post {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+body.dark-mode .post {
+    background-color: #333;
+}
+
+.post h3 {
+    font-size: 1.5rem;
+    color: #1a3c34;
+}
+
+body.dark-mode .post h3 {
+    color: #f1c40f;
+}
+
+.post p {
+    margin: 0.5rem 0;
+}
+
+.post img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 0.5rem;
+}
+
+/* Style the contact section */
+#contact {
+    text-align: center;
+}
+
+#contact p {
+    margin: 0.5rem 0;
+}
+
+#contact a {
+    color: #1a3c34;
+    text-decoration: none;
+}
+
+body.dark-mode #contact a {
+    color: #f1c40f;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Style the footer */
+footer {
+    background-color: #1a3c34;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
